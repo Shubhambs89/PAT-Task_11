@@ -52,8 +52,8 @@ def test_submit_button_functionality(driver):
     
     wait.until(EC.element_to_be_clickable((By.ID, "login-btn"))).click()
     
-    wait.until(EC.visibility_of_element_located((By.ID, "email"))).send_keys("sb1249952@gmail.com")
-    wait.until(EC.visibility_of_element_located((By.ID, "password"))).send_keys("4AI12me101@")
+    wait.until(EC.visibility_of_element_located((By.ID, "email"))).send_keys("username@gmail.com")
+    wait.until(EC.visibility_of_element_located((By.ID, "password"))).send_keys("Password@")
     
     submit_button = driver.find_element(By.ID, "login-btn")
     submit_button.click()
